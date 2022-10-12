@@ -1,4 +1,4 @@
-baseURL = 'https://seanwestg8.github.io/picklejuice.github.io/'
+baseURL = 'https://picklejuicedev.github.io/'
 languageCode = 'en-us'
 title = 'picklejuice'
 theme = 'spectral'
