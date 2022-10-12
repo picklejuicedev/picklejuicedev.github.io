@@ -1,0 +1,90 @@
+baseURL = 'https://seanwestg8.github.io/picklejuice.github.io/'
+languageCode = 'en-us'
+title = 'picklejuice'
+theme = 'spectral'
+icon = 'images/icon_dark.png'
+
+[params]
+fancyTitle = "picklejuice" # title for frontpage, may include image
+copyright = "picklejuice"
+description = """for the fine bits between the pickles.<br/> 
+                Adding nutricious <a href="/posts/">juice</a> to tech teams and  R&D projects. <br/>
+                """
+startbuttonText = "contact"
+startbuttonLink = "#contact"
+body_is_markdown = true
+
+[[params.menu.main]]
+url = '/'
+title = "Home"
+
+#[[params.menu.main]]
+#url = '/posts/'
+#title = "Posts"
+
+[[params.menu.main]]
+url = '/aboutme/'
+title = "About"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
+[[params.cta.link]]
+href = "#"
+text = "Learn More"
+special = false
+
+
+[params.one]
+enable = true
+title = 'Got a juicy challenge?'
+body = '''
+If you are looking for someone to help you with a juicy problem then you 
+have come to the right place. My name is Sean Westgate and I am a 
+passionate Technologist with over 20 years experience innovating, 
+building products, running teams, growing businesses and along all 
+ solving some pretty tough problems.
+
+Drop me a line,  no matter if it is about solving a technical challenge, 
+reviewing your tooling, upgrading your team or reviewing your tech strategy.
+
+Just add some picklejuice ;)'''
+
+
+[params.two]
+enable = false
+
+[[params.two.section]]
+img = "images/datashader.png"
+link = "/posts/datashader/"
+title = 'Visualise millions of datapoints'
+body = """There are a ton of awesome data visualisation packages out 
+there, but most require you to wrangle the data into a particular 
+way to be able to look at it.  """
+
+[[params.two.section]]
+img = "images/kedro.png"
+link = "/posts/kedro/"
+title = 'Kedro'
+body = """Creating well structured and reproducable data science 
+projects with this awesome library."""
+
+[[params.two.section]]
+img = "images/coding.jpg"
+link = "/posts/markdown-syntax/"
+title = 'Turbo charge your<br />Dev team'
+body = """The difference between doing ok and really 
+getting things done rarely depends on devs. 
+Really understanding what you are building and commincating it effectivly is key. Go faster by not building what you don't need."""
+
+
+[params.contact]
+enable = true
+title = "Contact"
+body = "Leave me a message."
+address = "1234 Somewhere Road<br />Some Place, Some State 0000<br />Some Country"
+email = "sean@pickle-juice.co.uk"
+subject = "New Submission!"
+plain = false
