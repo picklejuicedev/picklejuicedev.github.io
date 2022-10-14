@@ -7,8 +7,8 @@ icon = 'images/icon_dark.png'
 [params]
 fancyTitle = "picklejuice" # title for frontpage, may include image
 copyright = "picklejuice"
-description = """for the fine bits between the pickles.<br/> 
-                Adding nutricious <a href="/posts/">juice</a> to tech teams and  R&D projects. <br/>
+description = """For the <a href="/posts/">fine bits</a> between the pickles<br/> 
+                Adding nutricious solutions <br/> to tech teams and  R&D projects<br/>
                 """
 startbuttonText = "contact"
 startbuttonLink = "#contact"
@@ -39,18 +39,20 @@ special = false
 
 [params.one]
 enable = true
-title = 'Got a juicy challenge?'
+title = 'In a pickle?'
 body = '''
-If you are looking for someone to help you with a juicy problem then you 
-have come to the right place. My name is Sean Westgate and I am a 
-passionate Technologist with over 20 years experience innovating, 
-building products, running teams, growing businesses and along all 
- solving some pretty tough problems.
+My name is Sean Westgate, and I am an entrepreneurial 
+technologist with over 20 years experience driving innovation, 
+building products, running teams and growing businesses. 
+I took my first company, Green Hippo Ltd, all the way from 
+startup through to a new home within a parent group and am 
+now working as a Technical Consultant helping tech teams 
+improve to deliver disruptive products.
 
-Drop me a line,  no matter if it is about solving a technical challenge, 
-reviewing your tooling, upgrading your team or reviewing your tech strategy.
+If you are looking to upgrade your tooling or processes, review 
+your tech strategy or simply have a challenging technical problem, drop me a line.
 
-Just add some picklejuice ;)'''
+Just add some Picklejuice ;)'''
 
 
 [params.two]

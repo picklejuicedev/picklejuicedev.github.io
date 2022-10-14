@@ -11,125 +11,14 @@ categories: ["tech","data"]
 ---
 
 ## Sean Westgate
-
 {{< img src="/images/sean_portrait.jpg" >}}
 
+I am an entrepreneurial technologist with over 20 years experience driving innovation, building products, running teams and growing businesses. I am working as a Technical Consultant helping tech teams improve and deliver disruptive products. Please check out my [LinkedIn](https://www.linkedin.com/in/sean-westgate-88362045/) profile for a full list of experiences, or keep on reading to find out more about me.
 
-## Summary
-I am a passionate Technologist with over 20 years’ experience driving innovation, developing products and businesses. I have a track record managing technical teams to develop innovative and disruptive products. I am now offering my experience and knowledge to companies and teams as a Technical Team Consultant. 
+As the driving founder of [Green Hippo Ltd](https://www.green-hippo.com/) I had the privilege to work with some awesome people over the years. They have taught me a lot during the 20 years building the business from a tiny office in Tottenham to a 30 strong team with worldwide distribution and a market leading product.
+As a founder it is often tough to keep track of all the things that need doing, from day-to-day cashflow management to strategic planning, to building a strong brand and company culture. Oh, yes, not to forget to drive your product forward and look after your customers! Drop one ball, and it can be a real set-back. One of the key decisions we made during our growth was to bring on NEDs - Non-Executive Directors. It was invaluable to get honest feedback from experienced practitioners, enabling you to step outside the business and have a critical look at where your business is heading. Now that Green Hippo has found a new home with [tvONE](https://tvone.com/) as parent company, I am interested in working with the next generation of disruptive ideas, supporting young founders on their journey to grow their businesses.
 
+Next to building teams and businesses bringing new ideas to life, I have a real passion for technology. With a track record in high performance video playback and processing, I am turning towards the newer fields of data processing, machine learning and AI. Working with the team at [Citi Logik](https://www.citilogik.com/) in Leeds, I was able to help restructure their data processing work and bring software engineering practices to a team predominantly made up of Data Analysts. This meant creating processing templates to port their SQL algorithms to pySpark to speed up and parallelise processing of billions of events running on clusters in the cloud. We also added an automated testing system and combined JupyterLab based exploration with production ready and testable modules.  
 
-## Skills
+I am continuing my exploration of these new technologies, as the areas of machine learning and AI will be instrumental in shaping our future. It is imperative that we step into this bright new world with eyes wide open and a sense of critical understanding, putting us humans first.
 
--  Strategic Planning
-- Team Leadership
-- Software Design and Architecture
-- Software Development and Prototyping
-- Product Management
-- Business Leadership
-- Technical Training and Mentorship
-- Software Performance Optimisation
-
-## Experience
-
-### Picklejuice (2021 - current)
-**Role**: CEO
-
-
-#### Citilogik (2021-2022)
-**Role**: Technical Consultant {{<br>}}**Industry**: Big Data Processing / Transport Planning
-
-- Contract to devise and develop a data processing pipeline for transport algorithms
-- Move one-off prototyping code to tested, extensible and scalable platform for large datasets containing billions of events
--  R&D, technical prototyping as well as strategic consultation and planning
-
-**Technologies**: AWS, S3, Hadoop Clusters, EC2, Pyspark, CodeCommit, CodePipeline, CodeBuild, Docker, Jupyter Notebooks, Markdown , Boto3
-
-### Green Hippo Ltd (2000 - 2022)
-
-**Role**: Founder, CTO{{<br>}}**Industry**: Live Entertainment
-
-#### London, 2000 – 2013
-
-Role: Founder / Director
-
-- Founded Green Hippo Ltd
-- Realtime video processing for live events and installations
-- Award winning media server *Hippotizer* created
-- Organic team growth and expansion to worldwide distribution
-- Key clients include Disney and Cirque de Soleil with events such as the Academy Awards, Eurovision Song Contest and the Super Bowl Halftime Show
-
-
-
-#### London, 2013 – 2018
-
-Role: Founder / CTO
-
-- Improving company governance through NEDs and MD/ CEO
-- Expanding product range with second award winning video product
-- Expanding presence in the US, opening office in LA
-- Growing development team whilst continuously improving processes and tools
-
- 
-
-#### London, 2018 – 2022
-
-Role: Technical Director
-
-- Green Hippo is acquired by tvONE limited
-- Transition / integration into parent company
-- Downscale during pandemic while keeping core functions working
-- Expanding into non affected industries
-
- 
-
-**Technologies**: C++, C#, HLSL, WPF, USD, Azure DevOps, Jenkins, Git, Lua, Display Technologies, Networking, ZeroMQ, 3D graphics
-
- 
-
- 
-
-### Gobbledegook (2009 – 2020)
-
-**Role**: Founder, Technical Director{{<br>}}**Industry**: Theatre / Installation Arts
-
-- Founded with Director/Dramaturg Frauke Franz
-- Interactive and immersive installations and performances for families
-- Creative use of technologies
-- Groundbreaking shows that toured nationally and internationally
-
- 
-
-#### Projects:
-
-- “Over the moon” (2019) – a binaural audio adventure.
--  “When Wild Beasts Roamed” (2018) – Interactive exhibition about Victorian travelling menageries.
-- “In a Deep Dark Wood” (2012-16) – Contemporary solo dance show with digital projection.
-- “Planet of the Beetlebuns” (2009-2016) – Interactive video projection onto a magic carpet.
-
- 
-
-**Technologies**: Binaural head recording and audio production, ESP32 Microcontroller programming, Sensor Design and implementation, RFID sensors, Steppermotors, networking, IR video tracking, real-time video recording and manipulation, OpenCV, C#, IR camera tracking, blob tracking, DX graphics programming
-
-
-
-### AV Freelancer / Programmer (1998 - 2000)
-
-**Role**: Freelance AV Technician{{<br>}}**Industry**: Live Events / Conferences / Museums
-
-- International AV work and show programming
-- Project management and touring
-- Technical Design and Installation
-- AV programming
-
- 
-
-**Technologies**: Kodak carousel and Goetschmann slide projection, Audio production, Video projection, Dataton Trax control systems 
-
- 
-
-## Education (1994-1998)
-
-**Stuttgart Media University, Germany**
-
-Bachelor of Science: Computer Software and Media Applications

@@ -2996,14 +2996,14 @@ button:disabled,
 }
 
 .wrapper>.inner {
-	width: 60em;
+	width: 50em;
 	margin: 0 auto;
 }
 
 @media screen and (max-width: 1280px) {
 
 	.wrapper>.inner {
-		width: 90%;
+		width: 70%;
 	}
 
 }
@@ -3011,7 +3011,7 @@ button:disabled,
 @media screen and (max-width: 980px) {
 
 	.wrapper>.inner {
-		width: 100%;
+		width: 90%;
 	}
 
 }
@@ -3021,7 +3021,7 @@ button:disabled,
 }
 
 .wrapper.style1 {
-	background-color: #04724d;
+	background-color: #1f4738; /* #388659;  #1f4738 background landing blurb*/
 	color: #a8ba9a;
 }
 
@@ -3582,7 +3582,7 @@ button:disabled,
 	-ms-transition: -ms-transform 0.5s ease;
 	transition: transform 0.5s ease;
 	-webkit-overflow-scrolling: touch;
-	background: #21b2a6;
+	background: #262735;
 	color: #ffffff;
 	height: 100%;
 	max-width: 80%;
