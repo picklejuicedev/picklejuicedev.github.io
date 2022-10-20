@@ -13,7 +13,7 @@ categories: ["tech","data"]
 ## Sean Westgate
 {{< img src="/images/sean_portrait.jpg" >}}
 
-I am an entrepreneurial technologist with over 20 years experience driving innovation, building products, running teams and growing businesses. I am working as a Technical Consultant helping tech teams improve and deliver disruptive products. Please check out my [LinkedIn](https://www.linkedin.com/in/sean-westgate-88362045/) profile for a full list of experiences, or keep on reading to find out more about me.
+I am an entrepreneurial technologist with over 20 years' experience driving innovation, building products, running teams and growing businesses. I am working as a Technical Consultant helping tech teams improve and deliver disruptive products. Please check out my [LinkedIn](https://www.linkedin.com/in/sean-westgate-88362045/) profile for a full list of experiences, or keep on reading to find out more about me.
 
 As the driving founder of  [Green Hippo Ltd](https://www.green-hippo.com/), I took the company all the way from a tiny office in North London to a successful international business with worldwide distribution. Our market leading product, the Hippotizer, served up video on many high profile shows,  including the [Eurovision Song Contest](https://www.green-hippo.com/green-hippo-2017-eurovision-song-contest-performance-wows-massive-global-audience/), [Lady Gaga at the Super Bowl Half-time Show](https://www.green-hippo.com/superbowllady-gaga/) and the ["Oscars" - Academy Award](https://www.green-hippo.com/88th-academy-awardsthe-oscars/) amongst many others. 
 
