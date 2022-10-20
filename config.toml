@@ -41,13 +41,13 @@ special = false
 enable = true
 title = 'In a pickle?'
 body = '''
-My name is Sean Westgate, and I am an entrepreneurial 
-technologist with over 20 years experience driving innovation, 
-building products, running teams and growing businesses. 
-I took my first company, Green Hippo Ltd, all the way from 
-startup through to a new home within a parent group and am 
-now working as a Technical Consultant helping tech teams 
-improve to deliver disruptive products.
+I am [Sean Westgate](/aboutme), an entrepreneurial technologist with over 20 
+years experience driving innovation, building products, running 
+teams and growing businesses. As the founder, CEO and CTO I took 
+Green Hippo Ltd from a startup through to a successful international 
+business. Now that it has found a new home within a parent group, I 
+am working as a Technical Consultant helping tech teams improve to 
+deliver disruptive products.
 
 If you are looking to upgrade your tooling or processes, review 
 your tech strategy or simply have a challenging technical problem, drop me a line.
