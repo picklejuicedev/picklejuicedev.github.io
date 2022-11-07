@@ -11,7 +11,7 @@ categories: ["tech","data"]
 ---
 
 ## Sean Westgate
-{{< img src="/images/sean_portrait.jpg" >}}
+{{< img src="/images/sean_portrait.jpg" width="220">}}
 
 I am an entrepreneurial technologist with over 20 years' experience driving innovation, building products, running teams and growing businesses. I am working as a Technical Consultant helping tech teams improve and deliver disruptive products. Please check out my [LinkedIn](https://www.linkedin.com/in/sean-westgate-88362045/) profile for a full list of experiences, or keep on reading to find out more about me.
 
