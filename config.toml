@@ -18,9 +18,9 @@ body_is_markdown = true
 url = '/'
 title = "Home"
 
-#[[params.menu.main]]
-#url = '/posts/'
-#title = "Posts"
+[[params.menu.main]]
+url = '/posts/'
+title = "Posts"
 
 [[params.menu.main]]
 url = '/aboutme/'
@@ -56,31 +56,15 @@ Just add some Picklejuice ;)'''
 
 
 [params.two]
-enable = false
-
-[[params.two.section]]
-img = "images/datashader.png"
-link = "/posts/datashader/"
-title = 'Visualise millions of datapoints'
-body = """There are a ton of awesome data visualisation packages out 
-there, but most require you to wrangle the data into a particular 
-way to be able to look at it.  """
-
-[[params.two.section]]
-img = "images/kedro.png"
-link = "/posts/kedro/"
-title = 'Kedro'
-body = """Creating well structured and reproducable data science 
-projects with this awesome library."""
+enable = true
 
 [[params.two.section]]
 img = "images/coding.jpg"
-link = "/posts/markdown-syntax/"
-title = 'Turbo charge your<br />Dev team'
-body = """The difference between doing ok and really 
-getting things done rarely depends on devs. 
-Really understanding what you are building and commincating it effectivly is key. Go faster by not building what you don't need."""
-
+link = "/posts/tools_overview/"
+title = 'Tools Infrastructure for Production'
+body = """What tools and  processes do you need to think about when building 
+production ready code? An what value or benefit are you hoping to 
+get from investing in them?  """
 
 [params.contact]
 enable = true
