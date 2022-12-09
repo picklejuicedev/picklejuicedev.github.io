@@ -15,7 +15,7 @@ Utilising best software engineering practice with Kedro starts with setting up a
 
 This short guide shows you how to get started with Python's built in venv environment manager together with VS Code to have a Kedro project set up in no time.
 
-I am assuming you have Python 3.7 or greater and VS Code installed. I am using Windows for the prompt examples, for macs/linux replace `python` with `python3` most other commands should be pretty similar - your prompt will look a bit different too. For some distributions you may also need to install venv separatly.
+I am assuming you have Python 3.7 or greater and [VS Code](https://code.visualstudio.com/) installed. I am using Windows for the prompt examples, for macs/linux replace `python` with `python3` most other commands should be pretty similar - your prompt will look a bit different too. For some distributions you may also need to install venv separatly.
 
 ## A Virtual Environment
 
@@ -60,7 +60,7 @@ Next we will install Kedro using pip into our environment:
 (.venv) C:\code\example-project>pip install kedro
 ```
 
-You can check that it has successfully installed like so:
+You can check that it has successfully installed using the `kedro info` command:
 
 ```powershell
 (.venv) C:\code\example-project>kedro info
@@ -122,7 +122,7 @@ Go to `View - Command Pallette` or use `ctrl + shift + P`, then search for `Pyth
 
 ![image-20221207115149745](/images/vscode_interpreter.png)
 
-You may already have some interpreters listed here, click on `+ Enter interpreter path...`, then use `Find..` to navigate back up to the project parent folder, into then select `.venv/Scripts/Python.exe`
+You may already have some interpreters listed here, click on `+ Enter interpreter path...`, then use `Find..` to navigate back up to the project parent folder, into then select `.venv/Scripts/Python.exe` (`bin/` folder for Mac users).
 
 To confirm, select the file `src/setup.py` and you will see your environment listed in the bottom right:
 
@@ -136,9 +136,9 @@ The next steps are optional, but still worth doing as they make developing a lot
 
 ### Set up Linting and Auto-Formatting
 
-If you haven't yet installed the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), please do that first thing. it will install `pylance`as language server for Python. We have already installed `flake8`, `black`and `isort` via `requirements.txt` so let's see what they do and how to configure them.
+If you haven't yet installed the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), please do that first thing. It will install `pylance`as language server for Python. We have already installed `flake8`, `black`and `isort` via `requirements.txt`, so let's see what they do and how to configure them.
 
-These tools statically analyse your code and make suggestions how to improve it, so you have a consistent style throughout your codebase. Why? As we read code a lot more than writing it, we want to make sure all code looks the same and follows the same rules. Easier on your eyes and your colleagues.
+These tools statically analyse your code and make suggestions how to improve it, so you have a consistent style throughout your codebase. Why? As we read code a lot more than writing it, we want to make sure all code looks the same and follows the same rules. Easier on your eyes and your colleagues'.
 
 Here some code that runs ok, but doesn't conform to standard rules of indentation, whitespaces etc.
 
@@ -168,6 +168,6 @@ You may have seen that in the Settings dialog there is a `User` and a `Workspace
 
 These are the basics to set you up for working with Kedro and create maintainable data science pipelines based on software engineering best practice. We have created a virtual environment to isolate projects from sharing the same dependencies and packages. Then we have set up our IDE to run this environment, installed all required packages, and set up linting and formatting.
 
-Why not convert some Jupyter Notebooks into Kedro Pipelines next?
+Why not [convert some Jupyter Notebooks into Kedro Pipelines](/posts/notebook_2_kedro/) next?
 
 If you want to dive deeper into virtual environments, there are a ton of guides and tutorials out there. Just note that it gets pretty technical very quickly. There is also a lot more you can do in VS code such as set up Debugging, customise auto-complete to help with project settings files or use the built in git client. If you like this guide, leave a comment and which one of those you would like to learn more about.
