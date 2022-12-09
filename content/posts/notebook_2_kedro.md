@@ -171,6 +171,8 @@ There is quite a bit of code, let's step through it:
 
 Good functions have a clear name, do only one thing and it is very clear what they do. You feed something in and get something out. This is a key concept in software engineering: hiding complexity.
 
+This brings me to the topic of automating the process of conversion of Notebooks to plain python code. They do work, but you need to take extra care when writing the notebook in the first place. For me this defeats the purpose of using notebooks, I like to be really messy and just explore. During the process of converting the code to functions is when they will be tidied up, reviewed and documented. This is very much a hands-on approach.
+
 ## Building the pipeline
 
 So we have built some nodes, but not yet used them. Let's import them into `pipelines/data_proc/pipeline.py` and add them to the pipeline:
@@ -209,7 +211,13 @@ Looks like our pipeline is working. And here is another important building block
 
 ## Combining pipelines
 
-Feel free to carry on adding and converting your own pipelines for a bit of a challenge. Or download the completed project from my GitHub repository. In total I created 4 pipelines:
+Feel free to carry on adding and converting your own pipelines for a bit of a challenge. Or download the completed project from my GitHub repository:
+
+```
+git clone --branch notebook2kedro https://github.com/picklejuicedev/kedro-tutorial.git
+```
+
+ In total I created 4 pipelines:
 
 - `data_proc`: for pre-processing the training data
 - `data_encode`: for encoding the string based enumerations
