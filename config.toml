@@ -4,6 +4,12 @@ title = 'picklejuice'
 theme = 'spectral'
 icon = 'images/icon_dark.png'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
 [params]
 fancyTitle = "picklejuice" # title for frontpage, may include image
 copyright = "picklejuice"
