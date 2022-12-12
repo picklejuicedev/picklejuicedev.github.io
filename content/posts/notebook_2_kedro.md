@@ -80,10 +80,10 @@ As a starting point we want to copy 2 files into the project folder:
 - first, copy  `train.csv` to `data/01_raw/` 
 - then, copy the notebook into the folder `notebooks/`
 
-We need to install the `pandas` and `sci-kit-learn` packages that will be used by the project:
+We need to install the `pandas` and `scikit-learn` packages that will be used by the project:
 
 ```powershell
-pip install pandas sci-kit-learn
+pip install pandas scikit-learn
 ```
 
 Next, open up VS code if not already running. Be sure to have the virtual environment with all dependencies as interpreter.
