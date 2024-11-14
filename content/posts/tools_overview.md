@@ -9,8 +9,6 @@ tags = [
 ]
 +++
 
-# Tools Infrastructure for Production 
-
 
 Working in a team on a project that will span several months or years, you will need to create an infrastructure to support your team as the codebase grows. In this article I will discuss a bunch of tools, what they do and why you would need them. Every project, team and business is different though, so this is part of my experience and you will need to tweak the selection of tools and their priorities to your own use-case. 
 
