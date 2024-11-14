@@ -25,12 +25,18 @@ url = '/'
 title = "Home"
 
 [[params.menu.main]]
+url = '/mkdocmaker/'
+title = "MkDoc Maker"
+
+[[params.menu.main]]
 url = '/posts/'
 title = "Posts"
 
 [[params.menu.main]]
 url = '/aboutme/'
 title = "About"
+
+
 
 [taxonomies]
     tag = "tags"
@@ -65,12 +71,13 @@ Just add some Picklejuice ;)'''
 enable = true
 
 [[params.two.section]]
-img = "images/coding.jpg"
-link = "/posts/tools_overview/"
-title = 'Tools Infrastructure for Production'
-body = """What tools and  processes do you need to think about when building 
-production ready code? An what value or benefit are you hoping to 
-get from investing in them?  """
+img = "images/MyFirstRun.gif"
+link = "/mkdocmaker/"
+title = 'MkDoc Maker: Your AI documentation assistant'
+body = """MkDoc Maker is an AI powered markdown writing assistant that 
+will help write high quality technical documentation faster. You can reference 
+technical thirdparty documents or upload images and let the Ai extract suitable 
+information to add to the document. """
 
 [params.contact]
 enable = true
