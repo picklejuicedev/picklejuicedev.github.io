@@ -11,60 +11,58 @@ categories: ["tech","AI"]
 ---
 
 
+# MkDoc Maker
 
-MkDoc Maker is an AI powered markdown writing assistant that will help write high quality technical documentation faster. You can reference technical thirdparty documents or upload images and let the Ai extract suitable information to add to the document. Or when starting a new documentation project, just write up some messy notes and let the assistant come up with suitable headings. Finally you can also review and tune specific sections of your documentation.
+MkDoc Maker is an AI-powered markdown writing assistant designed to help you create high-quality technical documentation faster. It leverages the latest LLMs(large Language Models) to extract information from various sources, including technical documents, images, and even your own messy notes, and then uses this information to generate well-structured and informative content. 
 
-Like with a real in-person writing assistant, you need to give MkDoc Maker information to get started. The more context you can give, the better the output will be. But it isn't always about getting it to write the final version, more often than not can MkDoc Maker unblock you by providing an idea or a framework to work within. After all, most of us are coders, not documentation writers.
+**How MkDoc Maker Works:**
+
+Think of MkDoc Maker as a writing partner. You provide it with context, and it assists you in generating content, refining existing text, even suggesting headings. While it can't write the final version for you, it can significantly speed up your workflow by providing ideas, frameworks, and suggestions to work with. 
+
+**Key Features:**
+
+* **Content Generation:**  Generate new chapters based on your existing notes, images, or technical documents.
+* **Review and Refinement:**  Review existing text and receive suggestions for improvement, including grammar and style corrections.
+* **Heading Generation:**  Struggling to come up with headings? MkDoc Maker can help you create a well-structured outline for your document.
+
+**Remember:** MkDoc Maker is a tool to assist you, not replace you. It's essential to review and validate the generated content to ensure accuracy and alignment with your project's specific needs. 
 
 ## Getting Started
 
 **Install Extension**
 
-As MkDoc Maker is currently in pre-release alpha you will have been given a `.vsix` package that can be used to add the extension to your VS Code installation
+Simply install the extension from the VS Code marketplace. Search for "MkDoc Maker" and click *install*.
 
-- Open VS Code and, select Extensions, pick the 3 dots and then select "Install from VSIX..."
+**Set up an Account**
 
-![image-20241030175848701](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/InstallFromVSIX.png?raw=true)
+You will need to create an account to use MkDoc Maker. To do this, head over to [https://mkdoc-maker.web.app/](https://mkdoc-maker.web.app/) and register. Be sure to verify your email.
 
+**Set Email and Password for the Extension** 
 
+Once you have installed the extension, configure it with your account credentials . To do this, open the command palette (**Ctrl+Shift+P** or **Cmd+Shift+P**) and type "MkDoc Maker: Enter Email and Password" and select the command. Enter your details and press *Enter*
 
-- select the provided installer and hit "Install"
+![image-20241031114321368](/images/CommandPalette.png)
 
+You are now ready to use MkDoc Maker.
 
-
-**Set Email and Password**
-
-- Press **CTRL + Shift + P** to open the command palette and start typing "mkdoc".
-- You will see all available MkDoc Maker commands in the drop down selection
-	![image-20241031114321368](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/CommandPalette.png?raw=true)
-- Select "Enter Email and Password"
-- You will be prompted to enter both and a popup will confirm if they have been stored.
-- If successful they will be added to your local VS Code Secrets storage
-
-You are now ready to run your first prompt.
-
-
-
-**Basic Example**
+## Basic Example
 
 - Create a new `hello_mkdoc.md` file and open it.
 - Let's give it a header "# Welcome to MkDoc Maker" and one subchapter "## Markdown Syntax"
 - Add the prompt "//generate" inside your subchapter
 - Your file should look like this:
 
-![image-20241030181314732](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/image-20241030181314732.png?raw=true)
+![image-20241030181314732](/images/image-20241030181314732.png)
 
 - press the "PLAY" button on the top right of your editor
 
 
-
-![MyFirstRun](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/MyFirstRun.gif?raw=true)
+![MyFirstRun](/images/MyFirstRun.gif)
 
 - MkDoc Maker will take the information it has (not a lot at the moment) and feed this to an AI-model and insert the answer back into the document.
 - Buttons will pop up for you to "Accept" or "Reject" the suggestion. Press "Accept".
 - Hit the "preview" button in the top right hand corner to see your Markdown file in all its rendered glory.
 - If you accept the generated text, then the extension will automatically change the prompt to "//ignore" so it isn't accidentally run again.
-
 
 
 **Refining our Query**
@@ -79,21 +77,19 @@ Let's say we want to give the AI some more directives and limit the output to 10
 
 First hit Ctrl + Z until you to your original document and then add a **note** starting with "// " (note the space!):
 
-```markdown
-# Welcome to MkDoc Maker
+  ```markdown
+  # Welcome to MkDoc Maker
 
-## Markdown Syntax
+  ## Markdown Syntax
 
-// Limit the output to 100 lines and put in a table.
-//generate
+  // Limit the output to 100 lines and put in a table.
+  //generate
 
-```
+  ```
 
 Now the output will look something like this:
 
-![image-20241031115721413](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/MarkdownSyntaxTable.png?raw=true)
-
-
+![image-20241031115721413](/images/MarkdownSyntaxTable.png)
 
 
 
@@ -112,15 +108,16 @@ Let's add this screen shot of VS Code when setting up the Extension and ask it t
 **Images**
 
 - save this image to into your `images` folder:
-  ![image-20241030175848701](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/InstallFromVSIX.png?raw=true)
+  ![register](/images/register.png)
 
-- The insert a reference to it in your markdown file like this:
+- Then insert a reference to it in your markdown file like this:
   ```markdown
   # Welcome to MkDoc Maker
   
-  ## Installing the Extension
+  ## Create an account
   
-  ![install](images/InstallFromVSIX.png)
+  ![register](images/register.png)
+  
   //generate
   
   
@@ -129,7 +126,7 @@ Let's add this screen shot of VS Code when setting up the Extension and ask it t
   // Limit the output to 100 lines and put them in a table.
   //ignore
   ```
-
+  
 - (note to change the command in the markdown syntax chapter to "//ignore" as we don't want to run this)
 - If you now run the extension, it will analyse the image and consider it in its response.
 - You can also add "// notes" to refine the response, or sometimes it is just simple to edit the response until you are happy.
@@ -138,13 +135,13 @@ Let's add this screen shot of VS Code when setting up the Extension and ask it t
 
 > INFO
 >
-> Large Language Models (LLMs) are amazing at what they do, however under the hood they mostly only predict the next word. They appear to be "intelligent", however only you as the writer will know your project, so you need to validate the output generated.
+> Large Language Models (LLMs) are amazing at what they do, but under the hood they are a very fancy next word predicting machine. They appear to be "intelligent", however only you as the writer will know your project, so you need to validate the output generated.
 >
 > In the above example, the AI assumed that the extension is available via the VS Code Extension Marketplace. As we are in Alpha, this is not the case, but how should the AI know? So I deleted this, but it got how to install manually via the .vsix file correctly.
 
  
 
-**Resources**
+### Resources
 
 In addition to images that the user will see as part of the document, we can add more images and also larger text files as references for the AI to consider.
 
@@ -152,23 +149,21 @@ For a VS Code extension, all commands, shortcuts and menu items are defined in a
 
 I can now include this file using the `//use <filename>` command:
 
-```markdown
-...
+  ```markdown
 
-## Commands and Shortcuts
+  ## Commands and Shortcuts
 
-//use package.json.txt
-// list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
-//generate
+  //use package.json.txt
+  // list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
+  //generate
 
-...
-```
+  ```
 
 
 
 And this is the output:
 
-![image-20241031125700213](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/commandsMenu?raw=true)
+![image-20241031125700213](/images/commandsMenu.png)
 
 
 
@@ -179,28 +174,26 @@ Awesome - this just saved me a lot of time and with some minor tweaks this is no
 > On my first run it would list the internal command references, so I had to tweak the // note to exclude them, hence "...don't list internal command names such as mkdocmaker.review". Generally, if you can be specific in your prompts and give examples, it will help the LLM to respond as you would expect. Well, just like a writer, who doesn't really know what "command names" are, you would give an example to be sure.
 
 
-
-**Folders**
+### Folders
 
 At times you may include multiple files or images as resources. You can add multiple files as comma separated values, however you can also create subfolders and then reference all files in that folder. Often it makes sense to organise your resources in folders as chapters, so you can add resources for each one.
 
 This is an example syntax after moving the file `package.json.txt` into a folder called `commands` (note the "/" after the folder name):
 
-```
-...
+  ```markdown
 
-## Commands and Shortcuts
+  ## Commands and Shortcuts
 
-//use commands/
-// list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
-//generate
+  //use commands/
+  // list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
+  //generate
 
-...
-```
+  ```
 
 
 
-**Supported file formats**
+### Supported file formats
+
 
 We are continually adding more formats that can be used as resources. At the time of writing the following formats are supported:
 
@@ -209,6 +202,9 @@ We are continually adding more formats that can be used as resources. At the tim
 | Text files (.txt)         | myFile.txt  | Can ingest any plain text file. As ingestion works on the file ending you can add .txt to any code related file and include it. |
 | Images (.png, .jpg, jpeg) | myImage.png | Images can be screengrabs or any other useful resource.      |
 | Markdown (.md)            | myDoc.md    | A markdown file, i.e. technical documentation of some other technology. |
+| PDF (.pdf)                | myDoc.pdf   | Any pdf file as resource or reference |
+| Video (.mp4)              | myVideo.mp4 | Any mp4 video file as resource or reference |
+| Audio (.m4a, .mp3)        | myAudio.m4a | Any m4a or mp3 audio file as resource or reference | 
 
 
 
@@ -232,26 +228,29 @@ Here and example:
 
   **Input:**
 
-  ```markdown
-  # Welcome to MkDoc Maker
-  
-  //summary
-  
-  ## Installing the Extension
-  
-  ...
+    ```markdown
+    # Welcome to MkDoc Maker
+    
+    //summary
+    
+    ## Installing the Extension
+    
+    ...
+
   ```
 
   **Output:**
 
-  ```markdown
-  # Welcome to MkDoc Maker
-  
-  //ignore
-  
-  MkDoc Maker is a powerful extension for Visual Studio Code that helps you create high-quality documentation from Markdown files. It provides a range of features to streamline your documentation workflow, including prompts for generating different types of content, a review system for improving your writing, and shortcuts for common tasks. 
-   
+    ```markdown
+    # Welcome to MkDoc Maker
+    
+    //ignore
+    
+    MkDoc Maker is a powerful extension for Visual Studio Code that helps you create high-quality documentation from Markdown files. It provides a range of features to streamline your documentation workflow, including prompts for generating different types of content, a review system for improving your writing, and shortcuts for common tasks. 
+    
+    
   ```
+
 
  In this instance, nothing was selected so it will use all sub-chapters which in this case is the whole document as "# Welcome to MkDoc Maker" is the root or top-level chapter.
 
@@ -276,7 +275,7 @@ Will change to:
 MkDoc Maker can help you review your text. It can fix typos, improve grammar, and even generate examples. To use this feature, simply highlight the text you want to review and right-click. MkDoc Maker will handle the rest. 
 ```
 
-![ReviewSelected](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/ReviewSelected.gif?raw=true)
+![ReviewSelected](/images/ReviewSelected.gif)
 
 
 
@@ -286,17 +285,18 @@ When starting out on a documentation project, it can be difficult to divide your
 
 Here an example:
 
-``` markdown
-# MkDoc Maker
+  ``` markdown
 
-//use folders/, commands/, prompts/
-//head
+  # MkDoc Maker
 
-```
+  //use folders/, commands/, prompts/
+  //head
+
+  ```
 
 As before you can include any resources in your prompt, so if you already have some images or other files, include them to give more context. After a run it will generate a headings structure suggestion:
 
-![image-20241114133902867](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/headsGenerated.png?raw=true)
+![image-20241114133902867](images/headsGenerated.png)
 
 ### Generating a testplan (experimental)
 
@@ -304,16 +304,16 @@ The latest edition to MkDoc Maker is a prompt that helps with the creation of te
 
 In your `hello_mkdoc.md` document create a new chapter at the end of the document:
 
-```markdown
-## Testing MkDoc Maker
+  ```markdown
+  ## Testing MkDoc Maker
 
-// generate a list of testcases covering all functions and features.
-//test
-```
+  // generate a list of testcases covering all functions and features.
+  //test
+  ```
 
 Based on the entire document it will create test case headers. 
 
-![image-20241113162417668](https://github.com/picklejuicedev/mkdoc_maker_docs/blob/main/images/test_output.png?raw=true)
+![image-20241113162417668](/images/test_output.png)
 
 
 
@@ -331,6 +331,7 @@ You can access these commands through the Command Palette (**Cmd+Shift+P** on ma
 * **MkDocMaker: Generate Chapter:** Generates a new chapter based on the header, notes, resources and the remaining current file's content.
 * **MkDocMaker: Accept suggestion:** Accepts a suggestion provided by the MkDocMaker review system.
 * **MkDocMaker: Reject suggestion:** Rejects a suggestion provided by the MkDocMaker review system.
+* **MkDocMaker: Create a demo Markdown document:** Creates a sample markdown document that can be used for first experiments.
 
 ### Menu Items
 
@@ -351,5 +352,47 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 
 * **Ctrl+M, Ctrl+M:**  Runs the chapter parser and executes commands.
 * **Ctrl+M, Ctrl+R:**  Reviews the selected text. 
-* **Ctrl+M, Ctrl+Y: Accept the text generation. ("**Y**es")
+* **Ctrl+M, Ctrl+Y**: Accept the text generation. ("**Y**es")
 * **Ctrl+M, Ctrl+N**: Reject the text generation ("**N**o")
+
+
+## Version History
+0.2.0
+- pack with esbuild
+- release to marketplace as pre-release
+
+0.1.6
+- refactor extension
+- readme and demo updates
+- review text insertion improved
+- Settings: file cache, model, whole doc and temperature added
+- better query reporting
+- improved logging
+- fix headings autocomplete
+
+0.1.5
+- support for images and resources as URLs, especially useful for images
+- demo command to generate a sample Markdown document
+- basic auto-complete when typing //
+- add version history to README
+
+0.1.4
+- remove password validation in VS Code
+
+0.1.3
+- package tidy up
+
+0.1.2
+- add support for pdf, mp4, mp3, m4a
+- fix space in file name bug
+- last login time recorded
+- finish unit tests
+
+0.1.1
+- fix insertions bugs
+- README.md
+- added logger
+
+0.1.0
+- first basic version
+
