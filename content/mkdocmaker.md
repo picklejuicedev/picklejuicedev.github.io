@@ -35,7 +35,7 @@ Simply install the extension from the VS Code marketplace. Search for "MkDoc Mak
 
 **Set up an Account**
 
-You will need to create an account to use MkDoc Maker. To do this, head over to [https://mkdoc-maker.web.app/](https://mkdoc-maker.web.app/) and register. Be sure to verify your email.
+You will need to create an account to use MkDoc Maker. To do this, head over to [account setup](https://mkdocmaker.pickle-juice.co.uk) and register. Be sure to verify your email.
 
 **Set Email and Password for the Extension** 
 
@@ -111,22 +111,22 @@ Let's add this screen shot of VS Code when setting up the Extension and ask it t
   ![register](/images/register.png)
 
 - Then insert a reference to it in your markdown file like this:
-  ```markdown
-  # Welcome to MkDoc Maker
-  
-  ## Create an account
-  
-  ![register](images/register.png)
-  
-  //generate
-  
-  
-  ## Markdown Syntax
-  
-  // Limit the output to 100 lines and put them in a table.
-  //ignore
-  ```
-  
+    ```markdown
+    # Welcome to MkDoc Maker
+    
+    ## Create an account
+    
+    ![register](/images/register.png)
+    
+    //generate
+    
+    
+    ## Markdown Syntax
+    
+    // Limit the output to 100 lines and put them in a table.
+    //ignore
+    ```
+
 - (note to change the command in the markdown syntax chapter to "//ignore" as we don't want to run this)
 - If you now run the extension, it will analyse the image and consider it in its response.
 - You can also add "// notes" to refine the response, or sometimes it is just simple to edit the response until you are happy.
@@ -296,7 +296,7 @@ Here an example:
 
 As before you can include any resources in your prompt, so if you already have some images or other files, include them to give more context. After a run it will generate a headings structure suggestion:
 
-![image-20241114133902867](images/headsGenerated.png)
+![image-20241114133902867](/images/headsGenerated.png)
 
 ### Generating a testplan (experimental)
 
@@ -352,11 +352,15 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 
 * **Ctrl+M, Ctrl+M:**  Runs the chapter parser and executes commands.
 * **Ctrl+M, Ctrl+R:**  Reviews the selected text. 
-* **Ctrl+M, Ctrl+Y**: Accept the text generation. ("**Y**es")
+* **Ctrl+M, Ctrl+Y: Accept the text generation. ("**Y**es")
 * **Ctrl+M, Ctrl+N**: Reject the text generation ("**N**o")
 
 
 ## Version History
+
+0.2.1
+- update readme.md with account registration details
+
 0.2.0
 - pack with esbuild
 - release to marketplace as pre-release
@@ -395,4 +399,3 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 
 0.1.0
 - first basic version
-
