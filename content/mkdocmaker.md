@@ -355,6 +355,11 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 * **Ctrl+M, Ctrl+Y: Accept the text generation. ("**Y**es")
 * **Ctrl+M, Ctrl+N**: Reject the text generation ("**N**o")
 
+## Support
+
+For support review the extension readme and also the additional documentation at [Picklejuice](https://pickle-juice.co.uk/mkdocmaker).
+
+If you are really stuck, send us an email at support@pickle-juice.co.uk.
 
 ## Version History
 
