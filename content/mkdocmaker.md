@@ -145,15 +145,15 @@ Let's add this screen shot of VS Code when setting up the Extension and ask it t
 
 In addition to images that the user will see as part of the document, we can add more images and also larger text files as references for the AI to consider.
 
-For a VS Code extension, all commands, shortcuts and menu items are defined in a file called `package.json`. Currently the extension only supports images and text files, so adding a `.txt` to the end of the file makes it compatible and I can copy it to the resources folder.
+For a VS Code extension, all commands, shortcuts and menu items are defined in a file called `package.json`, let's copy it into the resource folder.
 
-I can now include this file using the `//use <filename>` command:
+It can now be included using the `//use <filename>` command:
 
   ```markdown
 
   ## Commands and Shortcuts
 
-  //use package.json.txt
+  //use package.json
   // list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
   //generate
 
@@ -174,9 +174,9 @@ Awesome - this just saved me a lot of time and with some minor tweaks this is no
 > On my first run it would list the internal command references, so I had to tweak the // note to exclude them, hence "...don't list internal command names such as mkdocmaker.review". Generally, if you can be specific in your prompts and give examples, it will help the LLM to respond as you would expect. Well, just like a writer, who doesn't really know what "command names" are, you would give an example to be sure.
 
 
-### Folders
+### Using Glob Wildcards
 
-At times you may include multiple files or images as resources. You can add multiple files as comma separated values, however you can also create subfolders and then reference all files in that folder. Often it makes sense to organise your resources in folders as chapters, so you can add resources for each one.
+At times you may include multiple files or images as resources. You can add multiple files as semicolon separated values, however you can also use wildcards.
 
 This is an example syntax after moving the file `package.json.txt` into a folder called `commands` (note the "/" after the folder name):
 
@@ -184,12 +184,28 @@ This is an example syntax after moving the file `package.json.txt` into a folder
 
   ## Commands and Shortcuts
 
-  //use commands/
+  //use commands/*.*
   // list all available commands, menue items and shortcuts, don't list internal command names such as mkdocmaker.review
   //generate
 
   ```
 
+Here some more examples using wildcards:
+
+- `//use myfolder/*.png` - will include all png images
+- `//use **/*.png` - will include all folders and subfolders in the search for png images
+- `//use *.{png,jgp}` - will include png and jpg images in the resources folder
+- `//use a_folder/*.*; b_folder/*.*` - will include all files in a_folder and b_folder
+
+You can also reference files outside the resource folder:
+- `//use ../source/mylib/*.ts` - will include all files from the source folder inthe project root and then include all typescript files in the mylib folder
+- `//use c:/code/myproject/README.md` - will include the README file from the absolute path
+
+
+> NOTE:
+> More files will increase the time and load on the Large Language Model and it may pick information that isn't directly relevant to your chapter. It is recommended to have fewer, but more relevant files. Maybe create more chapters if too much information is needed for a single query.
+
+Glob wildcards are very versitile and powerful, for more detailed information, check out this [glob primer](https://github.com/isaacs/node-glob?tab=readme-ov-file#glob-primer).
 
 
 ### Supported file formats
@@ -206,7 +222,20 @@ We are continually adding more formats that can be used as resources. At the tim
 | Video (.mp4)              | myVideo.mp4 | Any mp4 video file as resource or reference |
 | Audio (.m4a, .mp3)        | myAudio.m4a | Any m4a or mp3 audio file as resource or reference | 
 
+Additionally, MkDoc Maker can process any file format that can be decoded as text, including but not limited to:
 
+* HTML (.html, .htm)
+* XML (.xml)
+* JSON (.json)
+* CSV (.csv)
+* TSV (.tsv)
+* YAML (.yaml, .yml)
+* RTF (.rtf)
+* Log files (.log)
+* Configuration files (.ini, .cfg, .conf)
+* Source code files (.c, .h, .cpp, .hpp, .java, .py, .js, .ts, .dart, .go, .rs, .php, .sh, .bash, .css, .sql, .lua, .rb, .swift, .kt, .pl, .asm, .vb, .dat, .inf, .lst, .dic, .text, .properties, .env)
+
+If you encounter a file format that is not supported, please submit a feature request.
 
 ## More Prompts
 
@@ -359,9 +388,15 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 
 For support review the extension readme and also the additional documentation at [Picklejuice](https://pickle-juice.co.uk/mkdocmaker).
 
-If you are really stuck, send us an email at support[at]pickle-juice.co.uk.
+If you are really stuck, send us an email at support@pickle-juice.co.uk.
+
 
 ## Version History
+
+0.2.2
+- add glob pattern matcher to resources
+- updated readme
+- support for Gemini-2.0-flash model
 
 0.2.1
 - update readme.md with account registration details
