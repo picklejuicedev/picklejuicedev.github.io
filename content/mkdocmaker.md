@@ -11,6 +11,8 @@ categories: ["tech","AI"]
 ---
 
 
+{{< youtube 9gcXQ5EPiY8 >}}
+
 # MkDoc Maker
 
 MkDoc Maker is an AI-powered markdown writing assistant designed to help you create high-quality technical documentation faster. It leverages the latest LLMs(large Language Models) to extract information from various sources, including technical documents, images, and even your own messy notes, and then uses this information to generate well-structured and informative content. 
@@ -257,27 +259,24 @@ Here and example:
 
   **Input:**
 
-    ```markdown
-    # Welcome to MkDoc Maker
-    
-    //summary
-    
-    ## Installing the Extension
-    
-    ...
-
+  ```markdown
+  # Welcome to MkDoc Maker
+  
+  //summary
+  
+  ## Installing the Extension
+  
   ```
+
 
   **Output:**
 
-    ```markdown
-    # Welcome to MkDoc Maker
-    
-    //ignore
-    
-    MkDoc Maker is a powerful extension for Visual Studio Code that helps you create high-quality documentation from Markdown files. It provides a range of features to streamline your documentation workflow, including prompts for generating different types of content, a review system for improving your writing, and shortcuts for common tasks. 
-    
-    
+  ```markdown
+  # Welcome to MkDoc Maker
+  
+  //ignore
+  
+  MkDoc Maker is a powerful extension for Visual Studio Code that helps you create high-quality documentation from Markdown files. It provides a range of features to streamline your documentation workflow, including prompts for generating different types of content, a review system for improving your writing, and shortcuts for common tasks. 
   ```
 
 
@@ -291,16 +290,17 @@ You can ask MkDoc Maker to make a suggestion to improve a part of text. You can 
 
 - as with other commands you can use "//review" to review a whole  chapter.
 - Alternatively you can select a section and right-click to use Review from the context menu.
+- Additional instructions can be added as notes, i.e. `// shorten this paragraph` or similar.
 
 Here is an example how you could use the review prompt:
 
-```
+```markdown
 ai can review text. will fix typos and have better gramma. also can make examples. Just hightlight and rightclick. mkdoc maker will do the rest.
 ```
 
 Will change to:
 
-```
+```markdown
 MkDoc Maker can help you review your text. It can fix typos, improve grammar, and even generate examples. To use this feature, simply highlight the text you want to review and right-click. MkDoc Maker will handle the rest. 
 ```
 
@@ -318,7 +318,7 @@ Here an example:
 
   # MkDoc Maker
 
-  //use folders/, commands/, prompts/
+  //use folders/*.*; commands/*.*; prompts/*.*
   //head
 
   ```
@@ -361,6 +361,7 @@ You can access these commands through the Command Palette (**Cmd+Shift+P** on ma
 * **MkDocMaker: Accept suggestion:** Accepts a suggestion provided by the MkDocMaker review system.
 * **MkDocMaker: Reject suggestion:** Rejects a suggestion provided by the MkDocMaker review system.
 * **MkDocMaker: Create a demo Markdown document:** Creates a sample markdown document that can be used for first experiments.
+* **MkDocMaker: Publish document:** Will create a new markdown file with the title as name with all commands and notes stripped out.
 
 ### Menu Items
 
@@ -381,7 +382,7 @@ MkDocMaker also integrates with the editor's context menu and the "Run" menu in 
 
 * **Ctrl+M, Ctrl+M:**  Runs the chapter parser and executes commands.
 * **Ctrl+M, Ctrl+R:**  Reviews the selected text. 
-* **Ctrl+M, Ctrl+Y: Accept the text generation. ("**Y**es")
+* **Ctrl+M, Ctrl+Y:**  Accept the text generation. ("**Y**es")
 * **Ctrl+M, Ctrl+N**: Reject the text generation ("**N**o")
 
 ## Support
@@ -392,6 +393,14 @@ If you are really stuck, send us an email at support@pickle-juice.co.uk.
 
 
 ## Version History
+
+0.2.3
+- add publish command
+- fix review replacement/insert
+- fix bug when title is not in first line
+- Gemini 2.0 as defaul model
+- handle output with ```markdown formatting
+- handle outputs using //
 
 0.2.2
 - add glob pattern matcher to resources
